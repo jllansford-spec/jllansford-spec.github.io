@@ -90,7 +90,8 @@ h1, h2, h3 { margin: 0; text-wrap: balance; }
     linear-gradient(color-mix(in srgb, var(--line) 60%, transparent) 1px, transparent 1px),
     linear-gradient(90deg, color-mix(in srgb, var(--line) 60%, transparent) 1px, transparent 1px);
   background-size: 32px 32px;
-  background-position: -1px -1px;
+  background-position: 0 0;
+  background-repeat: round;
   border-block: 1px solid var(--line);
   padding-block: clamp(2.5rem, 7vw, 5rem);
 }
@@ -168,8 +169,8 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   <div class="wrap">
     <span class="brand">Joe Lansford Design</span>
     <nav class="nav" aria-label="Sections">
-      <a href="#valorant">VALORANT</a>
       <a href="#leadership">Leadership</a>
+      <a href="#valorant">VALORANT</a>
       <a href="#press">Talks and press</a>
       <a href="#levels">Other levels</a>
       <a href="#league">League of Legends</a>
@@ -198,6 +199,44 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 </section>
 
 <main class="wrap">
+
+  <section id="leadership" aria-labelledby="leadership-h">
+    <div class="section-head">
+      <h2 id="leadership-h">Leadership</h2>
+      <span class="section-note">Craft quality and management</span>
+    </div>
+
+    <article class="entry">
+      <div>
+        <h3>World Design Lead, R&amp;D</h3>
+        <p class="meta">Current role</p>
+      </div>
+      <div class="entry-body">
+        <ul>
+          <li>Crafting design foundations to build a multi-year game around</li>
+          <li>Being a liaison between leadership and my teams</li>
+          <li>Production, staffing and milestone planning</li>
+          <li>Cross-team and cross-discipline collaboration to create high quality content</li>
+          <li>Map and worldbuilding expert level craft</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div>
+        <h3>Design Manager and Lead of Maps and Modes Teams</h3>
+        <p class="meta">VALORANT</p>
+      </div>
+      <div class="entry-body">
+        <ul>
+          <li>Developing product and design goals and frameworks</li>
+          <li>Mentoring new designers and other team members</li>          <li>&ldquo;Face of Maps&rdquo;: hosting interviews and product presentations</li>
+          <li>Clear and concise documentation</li>          <li>Hands on scripting, implementation and optimization</li>
+          <li>Leading the design and release of several maps and modes</li>
+        </ul>
+      </div>
+    </article>
+  </section>
 
   <section class="current" aria-labelledby="rnd">
     <div>
@@ -274,46 +313,8 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
         </ul>
         <p class="links">
           <a href="https://valorant.fandom.com/wiki/Spike_Rush" target="_blank" rel="noopener">Spike Rush</a>
-          <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-1-05/" target="_blank" rel="noopener">Deathmatch patch notes</a>
+          <a href="https://valorant.fandom.com/wiki/Deathmatch" target="_blank" rel="noopener">Deathmatch</a>
         </p>
-      </div>
-    </article>
-  </section>
-
-  <section id="leadership" aria-labelledby="leadership-h">
-    <div class="section-head">
-      <h2 id="leadership-h">Leadership</h2>
-      <span class="section-note">Craft quality and management</span>
-    </div>
-
-    <article class="entry">
-      <div>
-        <h3>World Design Lead, R&amp;D</h3>
-        <p class="meta">Current role</p>
-      </div>
-      <div class="entry-body">
-        <ul>
-          <li>Crafting design foundations to build a multi-year game around</li>
-          <li>Being a liaison between leadership and my teams</li>
-          <li>Production, staffing and milestone planning</li>
-          <li>Cross-team and cross-discipline collaboration to create high quality content</li>
-          <li>Map and worldbuilding expert level craft</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="entry">
-      <div>
-        <h3>Design Manager and Lead of Maps and Modes Teams</h3>
-        <p class="meta">VALORANT</p>
-      </div>
-      <div class="entry-body">
-        <ul>
-          <li>Developing product and design goals and frameworks</li>
-          <li>Mentoring new designers and other team members</li>          <li>&ldquo;Face of Maps&rdquo;: hosting interviews and product presentations</li>
-          <li>Clear and concise documentation</li>          <li>Hands on scripting, implementation and optimization</li>
-          <li>Leading the design and release of several maps and modes</li>
-        </ul>
       </div>
     </article>
   </section>
